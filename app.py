@@ -75,10 +75,24 @@ st.markdown("""
     }
     
     /* Input Styling Lock */
-    div[data-baseweb="input"], [data-baseweb="select"], [data-baseweb="base-input"] {
+    div[data-baseweb="input"], [data-baseweb="select"], [data-baseweb="base-input"], div[data-baseweb="input"] input {
         background-color: #FFFFFF !important;
         color: #1E293B !important;
         border-radius: 8px !important;
+        -webkit-text-fill-color: #1E293B !important;
+    }
+
+    /* Target Labels & Form Text specifically */
+    label, [data-testid="stWidgetLabel"] p, [data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] h2 {
+        color: #1E293B !important;
+    }
+
+    /* Form Visibility Lock */
+    [data-testid="stForm"] {
+        background-color: #FFFFFF !important;
+        padding: 20px !important;
+        border-radius: 15px !important;
+        border: 1px solid #E2E8F0 !important;
     }
 
     /* Mobile Responsive Adjustments */
@@ -92,6 +106,10 @@ st.markdown("""
         }
         [data-testid="stMetricValue"] {
             font-size: 1.4rem !important;
+        }
+        /* Ensure login column takes full width on mobile */
+        [data-testid="stVerticalBlock"] > div {
+            width: 100% !important;
         }
     }
 </style>
