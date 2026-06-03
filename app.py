@@ -27,15 +27,25 @@ st.markdown("""
         font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
-    /* Professional Soft Background */
+    /* GLOBAL LOCKED THEME: FORCES LIGHT MODE REGARDLESS OF SYSTEM SETTINGS */
+    html, body, [data-testid="stAppViewContainer"] {
+        background-color: #F8FAFC !important;
+    }
+
     .stApp {
         background: #F8FAFC !important;
         color: #1E293B !important;
     }
 
-    /* High-End Sidebar */
-    [data-testid="stSidebar"] {
+    /* Force text color for ALL common elements */
+    .stApp h1, .stApp h2, .stApp h3, .stApp p, .stApp span, .stApp label, .stApp div {
+        color: #1E293B !important;
+    }
+
+    /* High-End Sidebar Lock */
+    [data-testid="stSidebar"], [data-testid="stSidebar"] div, [data-testid="stSidebar"] span {
         background-color: #FFFFFF !important;
+        color: #1E293B !important;
     }
     
     /* Elegant Metric Cards with Accents */
@@ -44,67 +54,31 @@ st.markdown("""
         padding: 24px !important;
         border-radius: 12px !important;
         border: 1px solid #E2E8F0 !important;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
         border-top: 4px solid #4F46E5 !important;
     }
 
-    /* Force visibility for all metric text */
-    [data-testid="stMetricLabel"], 
-    [data-testid="stMetricValue"], 
-    [data-testid="stMetric"] div,
-    [data-testid="stMetric"] p {
+    /* Target Metric Labels and Values specifically */
+    [data-testid="stMetricLabel"], [data-testid="stMetricValue"] {
         color: #1E293B !important;
     }
-    
-    /* Specific Accent Colors for Metrics */
-    div[data-testid="metric-container"]:nth-child(1) [data-testid="stMetric"] { border-top-color: #4F46E5 !important; } /* Blue */
-    div[data-testid="metric-container"]:nth-child(2) [data-testid="stMetric"] { border-top-color: #EF4444 !important; } /* Red */
-    div[data-testid="metric-container"]:nth-child(3) [data-testid="stMetric"] { border-top-color: #10B981 !important; } /* Green */
 
     /* Professional Buttons */
     div.stButton > button:first-child {
-        background-color: #4F46E5;
-        color: #FFFFFF;
+        background-color: #4F46E5 !important;
+        color: #FFFFFF !important;
         border-radius: 8px;
         border: none;
         padding: 12px 24px;
         font-weight: 600;
-        transition: all 0.3s ease;
         box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
     }
-    div.stButton > button:hover {
-        background-color: #4338CA;
-        box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
-        transform: translateY(-1px);
-    }
     
-    /* Clean DataFrame/Table */
-    [data-testid="stDataFrame"] {
-        border-radius: 12px;
-        border: 1px solid #E5E7EB;
-        background: white;
-    }
-
-    /* Status Badges (Capsule Style) */
-    .status-capsule {
-        padding: 4px 12px;
-        border-radius: 9999px;
-        font-size: 12px;
-        font-weight: 600;
-    }
-
-    /* Headings */
-    h1 {
-        color: #111827 !important;
-        font-weight: 800 !important;
-        letter-spacing: -0.025em !important;
-        margin-bottom: 30px !important;
-    }
-    
-    /* Input Styling */
-    div[data-baseweb="input"], [data-baseweb="select"] {
-        border-radius: 8px !important;
+    /* Input Styling Lock */
+    div[data-baseweb="input"], [data-baseweb="select"], [data-baseweb="base-input"] {
         background-color: #FFFFFF !important;
+        color: #1E293B !important;
+        border-radius: 8px !important;
     }
 
     /* Mobile Responsive Adjustments */
@@ -112,22 +86,12 @@ st.markdown("""
         [data-testid="stMetric"] {
             padding: 12px 16px !important;
         }
-        [data-testid="stMetric"] [data-testid="stMetricLabel"] {
-            font-size: 0.8rem !important;
-        }
-        [data-testid="stMetric"] [data-testid="stMetricValue"] {
-            font-size: 1.3rem !important;
-        }
         h1 {
             font-size: 1.7rem !important;
             margin-bottom: 15px !important;
         }
-        .stTabs [data-baseweb="tab-list"] {
-            gap: 10px !important;
-        }
-        .stTabs [data-baseweb="tab"] {
-            padding: 8px 12px !important;
-            font-size: 14px !important;
+        [data-testid="stMetricValue"] {
+            font-size: 1.4rem !important;
         }
     }
 </style>
