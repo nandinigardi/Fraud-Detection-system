@@ -283,7 +283,7 @@ if menu == "🏠 Dashboard":
             return 'background-color: #D1FAE5; color: #065F46'
 
         st.dataframe(
-            display_df.style.applymap(style_rows, subset=['Status_Label']),
+            display_df.style.map(style_rows, subset=['Status_Label']),
             use_container_width=True
         )
 
