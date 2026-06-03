@@ -104,6 +104,30 @@ st.markdown("""
         border-radius: 8px !important;
         background-color: #FFFFFF !important;
     }
+
+    /* Mobile Responsive Adjustments */
+    @media (max-width: 768px) {
+        [data-testid="stMetric"] {
+            padding: 12px 16px !important;
+        }
+        [data-testid="stMetric"] [data-testid="stMetricLabel"] {
+            font-size: 0.8rem !important;
+        }
+        [data-testid="stMetric"] [data-testid="stMetricValue"] {
+            font-size: 1.3rem !important;
+        }
+        h1 {
+            font-size: 1.7rem !important;
+            margin-bottom: 15px !important;
+        }
+        .stTabs [data-baseweb="tab-list"] {
+            gap: 10px !important;
+        }
+        .stTabs [data-baseweb="tab"] {
+            padding: 8px 12px !important;
+            font-size: 14px !important;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
