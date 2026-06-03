@@ -29,29 +29,31 @@ st.markdown("""
 
     /* Professional Soft Background */
     .stApp {
-        background: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%);
-        color: #111827;
+        background: #F8FAFC !important;
+        color: #1E293B !important;
     }
 
     /* High-End Sidebar */
     [data-testid="stSidebar"] {
-        background-color: #FFFFFF;
-        border-right: 1px solid #E5E7EB;
+        background-color: #FFFFFF !important;
     }
     
     /* Elegant Metric Cards with Accents */
     [data-testid="stMetric"] {
-        background: #FFFFFF;
+        background: #FFFFFF !important;
         padding: 24px !important;
         border-radius: 12px !important;
-        border: 1px solid #E5E7EB !important;
+        border: 1px solid #E2E8F0 !important;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        border-top: 4px solid #4F46E5 !important; /* Indigo Accent */
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border-top: 4px solid #4F46E5 !important;
     }
-    [data-testid="stMetric"]:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    /* Force visibility for all metric text */
+    [data-testid="stMetricLabel"], 
+    [data-testid="stMetricValue"], 
+    [data-testid="stMetric"] div,
+    [data-testid="stMetric"] p {
+        color: #1E293B !important;
     }
     
     /* Specific Accent Colors for Metrics */
