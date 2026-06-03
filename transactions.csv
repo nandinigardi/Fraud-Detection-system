@@ -1,47 +1,52 @@
-Name,Amount,Location,Time_Risk,Transaction_Type,Frequency,Status
-Rohan,1500,India,0,ATM,6,0
-Emma,90000,USA,3,Online,1,1
-Arjun,2200,India,1,Card,5,0
-Sophia,120000,UK,3,Online,1,1
-Kabir,3200,India,2,ATM,4,0
-Daniel,95000,Canada,3,International,2,1
-Meera,4100,India,1,Card,3,0
-Chris,110000,USA,3,Online,1,1
-Anjali,2800,India,0,ATM,7,0
-Robert,130000,UK,3,Online,1,1
-Karan,3500,India,2,Card,4,0
-Olivia,87000,Canada,3,International,2,1
-Vikas,1700,India,0,ATM,6,0
-Ethan,140000,USA,3,Online,1,1
-Sneha,2600,India,1,Card,5,0
-Noah,115000,UK,3,Online,1,1
-Pooja,3900,India,2,ATM,3,0
-Lucas,98000,Canada,3,International,2,1
-Manish,2100,India,0,Card,5,0
-Ava,97000,USA,3,Online,1,1
-Ritika,4600,India,1,ATM,4,0
-Liam,102000,UK,3,Online,1,1
-Nikhil,3300,India,2,Card,4,0
-Mia,86000,Canada,3,International,2,1
-Harsh,1800,India,0,ATM,6,0
-Charlotte,121000,USA,3,Online,1,1
-Divya,2900,India,1,Card,5,0
-Benjamin,108000,UK,3,Online,1,1
-Akash,4200,India,2,ATM,4,0
-Amelia,93000,Canada,3,International,2,1
-Ishaan,900,India,0,ATM,8,0
-William,150000,USA,3,Online,1,1
-Tanya,6000,India,1,Card,3,0
-Evelyn,99000,UK,3,Online,1,1
-Rohit,700,India,0,ATM,10,0
-George,135000,Canada,3,International,1,1
-Neha,4500,India,2,Card,4,0
-David,160000,USA,3,Online,1,1
-Aman,3100,India,1,ATM,5,0
-Isabella,118000,UK,3,Online,1,1
-Raj,2000,India,0,Card,6,0
-Emily,88000,Canada,3,International,2,1
-Sahil,3700,India,2,Card,3,0
-John,112000,UK,3,Online,1,1
-Priya,1600,India,0,ATM,7,0
-Lucas2,145000,USA,3,Online,1,1
+Name,Amount,Location,Time_Risk,Transaction_Type,Frequency,Status,Status_Label
+John Smith,160616,Japan,1,International,9,1
+Li Wei,22282,India,0,International,10,0
+radha,500000000,India,0,ATM,1,3
+David Cohen,34435,USA,2,Online,7,0
+Vikram Singh,40649,UK,1,International,2,0
+Priya Patel,3470,USA,1,Card,2,0
+David Cohen,36327,USA,2,ATM,2,0
+Elena Rossi,48490,Germany,0,Card,11,0
+Priya Patel,24037,UK,2,Card,19,0
+John Smith,100013,Germany,2,International,7,2
+Vikram Singh,159516,India,2,Online,9,0
+John Smith,21881,Germany,3,ATM,19,0
+Amit Sharma,52685,Japan,3,ATM,6,2
+Li Wei,3631,UK,1,International,1,0
+Li Wei,3631,UK,1,International,1,0
+Elena Rossi,112657,Germany,2,Card,12,2
+Li Wei,165411,India,0,International,20,0
+John Smith,89876,Germany,3,Online,19,2
+Priya Patel,5648,India,1,Card,2,0
+Priya Patel,5648,India,1,Card,2,0
+Elena Rossi,35618,UK,1,Online,3,0
+Priya Patel,8253,Germany,3,Card,5,0
+Priya Patel,162188,USA,3,ATM,5,1
+Li Wei,128167,India,3,International,9,2
+Elena Rossi,44805,Japan,2,Online,19,0
+Elena Rossi,161404,Canada,3,Card,3,2
+David Cohen,148523,UK,2,International,7,1
+Amit Sharma,156194,USA,0,Online,17,1
+Li Wei,136128,Canada,1,Card,20,2
+Amit Sharma,134399,USA,3,Card,5,1
+Li Wei,104246,Germany,1,Card,16,1
+David Cohen,90331,USA,1,Online,4,1
+David Cohen,139773,Canada,1,International,16,2
+Li Wei,142715,India,1,ATM,5,0
+Amit Sharma,172085,Germany,0,Card,12,2
+Vikram Singh,74796,USA,1,Online,7,1
+Sara Khan,48499,UK,2,Online,18,0
+fIRDOS,80000000,India,0,ATM,1,3
+Li Wei,88019,Japan,0,ATM,13,1
+John Smith,100987,India,2,Online,3,0
+Vikram Singh,58166,UK,0,International,12,1
+David Cohen,30319,Germany,1,ATM,5,0
+Vikram Singh,147254,India,1,International,19,0
+Sara Khan,91477,USA,3,Card,20,2
+Elena Rossi,63783,USA,1,Online,4,1
+Sara Khan,44903,India,2,Online,17,0
+Sara Khan,44903,India,2,Online,17,0
+Li Wei,123104,Japan,1,Card,3,1
+Priya Patel,10612,Canada,1,Online,20,0
+Priya Patel,10612,Canada,1,Online,20,0
+Elena Rossi,99783,Japan,3,Online,12,1
